@@ -35,6 +35,8 @@ const useSplitbeeCount = <T extends string>(
   return isSingle ? (data as any)[events] : data;
 };
 
+console.log("ret");
+
 export default function App() {
   const toasts = useSplitbeeCount("Trigger Toast");
 
